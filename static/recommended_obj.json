@@ -1,0 +1,62 @@
+[
+    {
+        "product_id": "H001",
+        "product_name": "Dress",
+        "image_name": "05cdc058c937a106cfd5a0fb97fb27ee.jpg",
+        "similarity_score": 0.6354897022247314
+    },
+    {
+        "product_id": "H008",
+        "product_name": "Dress",
+        "image_name": "120e25b363617fbba1493f802ceaf4bc.jpg",
+        "similarity_score": 0.6146682500839233
+    },
+    {
+        "product_id": "H016",
+        "product_name": "Dress",
+        "image_name": "c630a51187b689f6b6d4d12d3c5b1989.jpg",
+        "similarity_score": 0.5894855856895447
+    },
+    {
+        "product_id": "H010",
+        "product_name": "Dress",
+        "image_name": "46419da441b9c91b7a8e6180fd626e20.jpg",
+        "similarity_score": 0.5883396863937378
+    },
+    {
+        "product_id": "H015",
+        "product_name": "Dress",
+        "image_name": "b25050d48cac9a4a400f57b8c03a097e.jpg",
+        "similarity_score": 0.5786924362182617
+    },
+    {
+        "product_id": "H017",
+        "product_name": "Dress",
+        "image_name": "c971c758963269fb894eca2c7c693c71.jpg",
+        "similarity_score": 0.5738877058029175
+    },
+    {
+        "product_id": "H009",
+        "product_name": "Dress",
+        "image_name": "528df19ff258e30af19f6a34833c164d.jpg",
+        "similarity_score": 0.5648958683013916
+    },
+    {
+        "product_id": "H006",
+        "product_name": "Dress",
+        "image_name": "78ab9fea1ef0b673650b6e73828ae981.jpg",
+        "similarity_score": 0.550742506980896
+    },
+    {
+        "product_id": "H014",
+        "product_name": "Dress",
+        "image_name": "af7fe770d413643d46d9ce7d0a130d89.jpg",
+        "similarity_score": 0.5487902760505676
+    },
+    {
+        "product_id": "H019",
+        "product_name": "Dress",
+        "image_name": "e4ad6eba5b8560b701eed8e3a56022e2.jpg",
+        "similarity_score": 0.5468665361404419
+    }
+]
