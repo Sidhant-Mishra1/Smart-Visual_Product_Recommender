@@ -7,16 +7,16 @@
     <!-- Include Font Awesome CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background-image: url('az.jpg');
+            background-image: url('data:image/jpeg;base64,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');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -29,7 +29,6 @@
             padding: 20px;
             margin-right: 20px;
             border-right: 2px solid rgba(255, 255, 255, 0.2);
-            /*  */
             background: rgba(0, 0, 0, 0.7);
             border-radius: 8px;
             transition: transform 0.3s ease-in-out;
@@ -64,7 +63,7 @@
         #video-container {
             width: 80%;
             max-width: 940px;
-            margin: 0 auto;
+            margin: auto; /* Add margin for spacing */
             padding: 20px;
             border-radius: 8px;
             text-align: center;
@@ -104,21 +103,36 @@
             font-size: 14px;
             text-align: center;
         }
-    </style>
+        #category-title {
+            margin-top: 10px;
+            font-size: 2em;
+            text-align: center;
+            color: #000;
+        }
+        #category-tagline {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            text-align: center;
+            color: #000;
+        }
+    </style>           
+
 </head>
 <body>
-    <div id="side-panel">
-        <!-- Use Font Awesome icons -->
-        <h2><i class="fas fa-images"></i> Stored Images</h2>
-        <div id="image-gallery"></div>
-    </div>
+    <h1 id="category-title">Smart-Visual Shopping Experience</h1>
+    
     <div id="video-container">
         <video id="videoPlayer" controls>
             <source src="{{ url_for('static', filename='videos/lalaland.mp4') }}" type="video/mp4">
         </video>
         <canvas id="canvas" style="display: none;"></canvas>
     </div>
-    
+    <h1 id="category-tagline">See It, Want It, Get It - Transforming Shopping with Cutting-Edge Visual AI</h1>
+    <div id="side-panel">
+        <!-- Use Font Awesome icons -->
+        <h2><i class="fas fa-images"></i> Stored Images</h2>
+        <div id="image-gallery"></div>
+    </div>
     <script>
         var video = document.getElementById('videoPlayer');
         var canvas = document.getElementById('canvas');

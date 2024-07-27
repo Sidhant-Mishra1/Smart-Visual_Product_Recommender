@@ -45,4 +45,4 @@ Members -
 Soumyadeep Dey,
 Pritam Raj,
 Shubham Bisht,
-Sidhant Mishra
+Sidhant Mishras
