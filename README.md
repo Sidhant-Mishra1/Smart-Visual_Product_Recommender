@@ -22,9 +22,9 @@ Ensure you have the following dependencies installed:
 
 1. *Clone the repository:*
 
-    sh
-    git clone [https://github.com/your-repo/product-recommender.git](https://github.com/Soumyadeep-Dey36/HackOn_Stakers)
-    
+    ```
+     git clone [https://github.com/your-repo/product-recommender.git](https://github.com/Soumyadeep-Dey36/HackOn_Stakers)
+    ```
 
 2. *Install the dependencies:*
 
