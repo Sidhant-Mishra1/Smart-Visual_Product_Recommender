@@ -10,7 +10,6 @@ from recommend_img import *
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
 
-# app = Flask(__name__, static_url_path='static')
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.secret_key = "xshgfdyhjsfyujc"
 
@@ -30,9 +29,8 @@ def save_data():
             return jsonify(status='error', message='No image data found'), 400
         
         dataURL = data['image']
-        app.logger.debug("Received data: %s", dataURL)  # Log the first 30 characters for debugging
+        app.logger.debug("Received data: %s", dataURL) 
 
-        # Extract base64 part of the data URL
         base64_str = dataURL.split(',')[1]
         
         # Decode the Base64 string
@@ -40,14 +38,11 @@ def save_data():
         
         # Save the image to a file
         img_dir = os.path.join('.', 'static/images')
-        # img_dir = 'C:/Users/User/Downloads/HackOn/website/static/images'
         img_path = os.path.join(img_dir, 'snap.jpg')
         
-        # cv2.imwrite(img_path, image_data)
         with open(img_path, "wb") as f:
             f.write(image_data)
         
-        # predict function
         predict()
         
         return jsonify(status='success', message='Image uploaded successfully')
@@ -59,11 +54,9 @@ def save_data():
 @app.route('/img_recommend',  methods=['POST'])
 def img_recommend():
     try:
-        # Requesting data from html file
         data = request.form['data']
         app.logger.debug(f"Received data: {data}")
         
-        # Path to the JSON file
         json_file_path = os.path.join('.', 'static/detected_obj.json')
         
         # Load JSON file from the file
@@ -77,7 +70,6 @@ def img_recommend():
             else:
                 return None
         
-        # Fetching the values from JSON file
         values = get_values_by_key(data, json_data)
 
         if values:
@@ -91,11 +83,9 @@ def img_recommend():
         print("10101010chgvcjhbchj")
         # render_template('cond_page.html')
         return jsonify(status='Successful')
-        # return render_template("third.html")
     except Exception as e:
         app.logger.error(f"Error in img_recommend: {e}")
         return jsonify(status='error', message=str(e)), 400
-    # return jsonify(status='success', message='Recommendations uploaded successfully')
         
 
 if __name__ == '__main__':
